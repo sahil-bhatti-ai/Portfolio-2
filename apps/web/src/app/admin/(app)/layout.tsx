@@ -9,6 +9,8 @@ import { signOutAction } from '../actions';
 
 const NAV = [
   ['/admin', 'Dashboard'],
+  ['/admin/phd-atlas', 'PhD Atlas'],
+  ['/admin/masters-atlas', 'Masters Atlas'],
   ['/admin/profile', 'Profile'],
   ['/admin/project', 'Projects'],
   ['/admin/reproduction', 'Reproductions'],
