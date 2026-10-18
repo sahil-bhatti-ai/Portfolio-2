@@ -9,7 +9,7 @@ const SEED = {
       "Fully Funded Second Master’s Opportunities for 2027: Personalised AI/ML Research and Scholarship Audit (18 Oct 2026)",
       "Official scholarship/admission pages checked Oct 18 2026"
     ],
-    "note": "Strict funding filter: include only tuition PLUS meaningful living-cost scholarship or salaried research-master routes. Every entry is a competitive funding pathway, not a funded admission offer. Age, prior-degree eligibility, deadlines and supervisor availability may need confirmation. Tuition-only/partial awards, ineligible routes and unverified 2027-funded EMAI have not been imported."
+    "note": "Strict funding filter: include only tuition PLUS meaningful living-cost scholarship or salaried research-master routes. Every entry is a competitive funding pathway, not a funded admission offer. Age, prior-degree eligibility, deadlines and supervisor availability may need confirmation. Tuition-only/partial awards, ineligible routes and unverified 2027-funded EMAI have not been imported. The 2027 EMAI offer page explicitly showed self-funded applications; excluded. NTU requires prior-master subsidy verification; UTS July 2027 iRTP deadline (7 Oct 2026) had passed, so both are excluded pending new evidence."
   },
   "opportunities": [
     {
@@ -20,7 +20,7 @@ const SEED = {
       "institution": "Åbo Akademi + EDISS Consortium",
       "status": "Upcoming",
       "deadline": "2027-01-12",
-      "deadlineText": "2027-01-12",
+      "deadlineText": "12 Jan 2027 at 15:00 Helsinki time (funded round)",
       "fit": 9.6,
       "funding": "Erasmus Mundus / EDISS scholarship: participation fees plus €1,400/month for two years (award required)",
       "url": "https://www.master-ediss.eu/upcoming-application-rounds-ediss-intake-7/",
@@ -32,7 +32,9 @@ const SEED = {
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "High"
+      "priority": "High",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-SUTD",
@@ -49,34 +51,14 @@ const SEED = {
       "why": "Research-based degree and lab-level applied AI systems work instead of another generic coursework master's. Project and supervisor must be in reliable ML.",
       "next": "Confirm 2027 intake date, supervisory capacity and treatment of a prior Indian M.Tech; award applies only if selected.",
       "source": "Official SUTD fellowship page, checked Oct 2026",
-      "confidence": "Full tuition and stipend route verified; prior-master/2027 offer not verified",
+      "confidence": "Official SUTD: full tuition + S$2,900/month; prior-degree eligibility and 2027 intake still require confirmation.",
       "contact": "Scholarship and graduate admissions teams",
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "High"
-    },
-    {
-      "id": "M27-NTU",
-      "kind": "opportunity",
-      "name": "NTU: Research Master's in Computing or Engineering",
-      "country": "Singapore",
-      "institution": "Nanyang Technological University",
-      "status": "Programme",
-      "deadline": "",
-      "deadlineText": "2027 schedule requires confirmation",
-      "fit": 9.1,
-      "funding": "NTU Research Scholarship: tuition + S$2,900/month for international research-master’s scholars (reported)",
-      "url": "https://www.ntu.edu.sg/admissions/graduate/financialmatters/scholarships/research-scholarship",
-      "why": "Research-only advanced ML study can strengthen experimental papers and link to doctoral advisors; requires aligned thesis supervisor.",
-      "next": "Check prior-master tuition subsidy and research-scholarship eligibility in writing before applying; the reports disagree on Singapore second-master subsidy rules.",
-      "source": "Funded Second Master's Research, Oct 2026",
-      "confidence": "Reported full-cost scholarship; subsidy/prior-degree interaction unresolved",
-      "contact": "Scholarship and graduate admissions teams",
-      "email": "",
-      "likelihood": "Competitive conditional funding; not an admission probability",
-      "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "High"
+      "priority": "High",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-MELB",
@@ -98,7 +80,9 @@ const SEED = {
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "High"
+      "priority": "High",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-MONASH",
@@ -107,20 +91,22 @@ const SEED = {
       "country": "Australia",
       "institution": "Monash University",
       "status": "Programme",
-      "deadline": "2027-02-28",
-      "deadlineText": "2027-02-28",
+      "deadline": "2027-03-31",
+      "deadlineText": "2027 international scholarship round: verify exact R1 deadline",
       "fit": 9.3,
       "funding": "2027 MGS/RTP stipend A$41,100/year, packaged with international tuition scholarship MITS when awarded",
-      "url": "https://www.monash.edu/graduate-research/future-students/scholarships",
+      "url": "https://www.monash.edu/study/fees-scholarships/scholarships/find-a-scholarship/international-tuition-scholarship",
       "why": "Strong advanced research path in robust evaluation, reliable deep learning and changing-distribution prediction.",
-      "next": "Apply in 2027 international research scholarship round; confirm stipend AND tuition are both awarded before treating funded.",
+      "next": "Apply to the 2027 international graduate research scholarship round. Monash's official MITS page specifies 31 March for international Round 1; verify year-specific terms and require BOTH stipend and full tuition scholarship.",
       "source": "Official / reported Monash 2027 round",
       "confidence": "2027 stipend reported; full coverage requires paired tuition scholarship",
       "contact": "Scholarship and graduate admissions teams",
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "High"
+      "priority": "High",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-KULAI",
@@ -142,7 +128,9 @@ const SEED = {
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "High"
+      "priority": "High",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-KTHML",
@@ -164,7 +152,9 @@ const SEED = {
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "High"
+      "priority": "High",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-KTHSCR",
@@ -186,7 +176,9 @@ const SEED = {
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "Normal"
+      "priority": "Normal",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-MAAS",
@@ -208,7 +200,9 @@ const SEED = {
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "High"
+      "priority": "High",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-RUG",
@@ -217,20 +211,22 @@ const SEED = {
       "country": "Netherlands",
       "institution": "University of Groningen",
       "status": "Programme",
-      "deadline": "",
-      "deadlineText": "2027 schedule requires confirmation",
+      "deadline": "2026-12-01",
+      "deadlineText": "MSc application due before 1 Dec 2026 for fellowship nomination",
       "fit": 8.6,
       "funding": "Eric Bleumink Fellowship: full tuition plus travel, maintenance, books and insurance if nominated",
       "url": "https://www.rug.nl/education/scholarships/eric-bleumink-fellowship",
       "why": "Specialisation in modern AI and research thesis could advance toward reliability/robustness methods; proof of distinct academic progression needed.",
-      "next": "Request admissions and nomination guidance; verify 2027 MSc intake, fellowship nomination and scholarship eligibility for existing master's holder.",
+      "next": "Complete Groningen MSc admission application before 1 December 2026 so selection committee may nominate you. Scholarship itself cannot be applied to directly; undergraduate academic results are a selection concern.",
       "source": "European Master's funding research, 18 Oct 2026",
-      "confidence": "Full funding route reported; next call and second-master rules to reconfirm",
+      "confidence": "Indian nationality and full package verified on official EBF page; nomination is rare and competitive.",
       "contact": "Scholarship and graduate admissions teams",
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "Normal"
+      "priority": "Normal",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-OXFORD",
@@ -252,7 +248,9 @@ const SEED = {
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "Normal"
+      "priority": "Normal",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-OXMRES",
@@ -274,7 +272,9 @@ const SEED = {
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "High"
+      "priority": "High",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-CAMMLMI",
@@ -289,14 +289,16 @@ const SEED = {
       "funding": "Spärck AI and other full-cost institutional scholarships: international fees plus maintenance if awarded",
       "url": "https://www.postgraduate.study.cam.ac.uk/funding",
       "why": "Advanced ML and research intensive pathway to reliable model evaluation; very competitive maths and technical preparation.",
-      "next": "Verify course funding deadline and specific Spärck eligibility for a candidate with M.Tech; submit by early December 2026.",
+      "next": "Verify course funding deadline and specific Spärck eligibility for a candidate with M.Tech; submit by early December 2026. University scholarship source currently says award year 2026/27; obtain 2027/28 confirmation before treating it as open funded call.",
       "source": "Second master's research reports, Oct 2026",
-      "confidence": "Full-cost scholarship route reported; 2027 programme-level confirmation required",
+      "confidence": "Full-cost Spärck scholarship route verified for 2026-27; inclusion/number of funded places in 2027-28 not yet confirmed by Cambridge.",
       "contact": "Scholarship and graduate admissions teams",
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "High"
+      "priority": "High",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-CAMHAI",
@@ -311,36 +313,16 @@ const SEED = {
       "funding": "Spärck AI / Cambridge Trust full-cost scholarships where awarded",
       "url": "https://www.postgraduate.study.cam.ac.uk/funding",
       "why": "Relevance to reliable agentic AI evaluation and adaptable interactive systems; a weaker technical thesis bridge than MLMI.",
-      "next": "Confirm Spärck coverage for this exact 2027 course and scholarship deadlines.",
+      "next": "Confirm Spärck coverage for this exact 2027 course and scholarship deadlines. University scholarship source currently says award year 2026/27; obtain 2027/28 confirmation before treating it as open funded call.",
       "source": "Second master's research reports, Oct 2026",
-      "confidence": "Course-specific award mapping needs reconfirmation",
+      "confidence": "Full-cost Spärck scholarship route verified for 2026-27; inclusion/number of funded places in 2027-28 not yet confirmed by Cambridge.",
       "contact": "Scholarship and graduate admissions teams",
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "Normal"
-    },
-    {
-      "id": "M27-UTS",
-      "kind": "opportunity",
-      "name": "UTS: Master of Science (Research) in Computing",
-      "country": "Australia",
-      "institution": "University of Technology Sydney",
-      "status": "Programme",
-      "deadline": "2026-11-30",
-      "deadlineText": "2026-11-30",
-      "fit": 9,
-      "funding": "International RTP (iRTP): full research tuition plus reported A$40,500/year tax-free stipend if awarded",
-      "url": "https://www.uts.edu.au/for-students/admissions/higher-degree-research",
-      "why": "Research thesis in adaptive/uncertainty-aware classification develops beyond the M.Tech to a PhD-ready portfolio.",
-      "next": "Check if the current Nov 2026 funding round includes this Masters course and 2027 commencement; find supervisor.",
-      "source": "Funded Second Master's Research, Oct 2026",
-      "confidence": "Stipend package reported; precise 2027 award and deadline require official check",
-      "contact": "Scholarship and graduate admissions teams",
-      "email": "",
-      "likelihood": "Competitive conditional funding; not an admission probability",
-      "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "Normal"
+      "priority": "Normal",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     },
     {
       "id": "M27-UNSW",
@@ -362,7 +344,9 @@ const SEED = {
       "email": "",
       "likelihood": "Competitive conditional funding; not an admission probability",
       "conflict": "A full scholarship package exists, but funding is NOT guaranteed until awarded.",
-      "priority": "Normal"
+      "priority": "Normal",
+      "fundingConditional": true,
+      "lastReviewed": "2026-10-18"
     }
   ],
   "contacts": []
